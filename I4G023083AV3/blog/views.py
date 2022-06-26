@@ -12,7 +12,7 @@ class PostListView(ListView):
 
 class PostCreateView(CreateView):
     model = Post
-    fiels = "__all__"
+    field = "__all__"
     success_url = reverse_lazy("blog:all")
 
 class PostDetailView(DetailView):
